@@ -22,14 +22,17 @@ func New(allPrefix string, successPrefix string, neutralPrefix string, errorPref
 	neutralTemplate := allPrefix
 	errorTemplate := allPrefix
 	if successPrefix != "" {
-		successTemplate += successPrefix + ": %s"
+		successTemplate += successPrefix + ": "
 	}
 	if neutralPrefix != "" {
-		neutralTemplate += neutralPrefix + ": %s"
+		neutralTemplate += neutralPrefix + ": "
 	}
 	if errorPrefix != "" {
-		errorTemplate += errorPrefix + ": %s: %s"
+		errorTemplate += errorPrefix + ": "
 	}
+	successTemplate += "%s"
+	neutralTemplate += "%s"
+	neutralTemplate += "%s: %s"
 	fc := FancyChecker{
 		successTemplate: successTemplate,
 		neutralTemplate: neutralTemplate,
