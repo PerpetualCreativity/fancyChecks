@@ -34,3 +34,4 @@ fc.Success("Added config file")
 fc.Neutral("Contacting server")
 ```
 
+You can find more examples in [mailctl](https://github.com/PerpetualCreativity/mailctl) and [span](https://github.com/PerpetualCreativity/span).
