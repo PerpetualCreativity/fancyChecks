@@ -32,7 +32,7 @@ func New(allPrefix string, successPrefix string, neutralPrefix string, errorPref
 	}
 	successTemplate += "%s"
 	neutralTemplate += "%s"
-	neutralTemplate += "%s: %s"
+	errorTemplate += "%s: %s"
 	fc := FancyChecker{
 		successTemplate: successTemplate,
 		neutralTemplate: neutralTemplate,
